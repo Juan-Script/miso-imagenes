@@ -1,6 +1,15 @@
 import { UploadButton } from "../src/utils/uploadthing";
 import "@uploadthing/react/styles.css";
-import { useToast } from "@chakra-ui/react";
+import {
+  Box,
+  Card,
+  CardBody,
+  CardFooter,
+  CardHeader,
+  Flex,
+  Heading,
+  useToast,
+} from "@chakra-ui/react";
 import copy from "clipboard-copy";
 
 export default function Home() {
@@ -33,12 +42,33 @@ export default function Home() {
   };
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <UploadButton
-        endpoint="imageUploader"
-        onClientUploadComplete={handleClientUploadComplete}
-        onUploadError={handleUploadError}
-      />
-    </main>
+    <Flex
+      margin="auto"
+      padding="10px"
+      justifyContent="center"
+      alignItems="center"
+      h="100vh"
+    >
+      <Card maxW="sm" flexDirection="column" alignItems="center">
+        <CardHeader>
+          <Box>
+            <Heading size="md">Suba las imágenes que desees</Heading>
+          </Box>
+        </CardHeader>
+        <CardBody>
+          {" "}
+          <main className="flex min-h-screen flex-col items-center justify-between p-24">
+            <UploadButton
+              endpoint="imageUploader"
+              onClientUploadComplete={handleClientUploadComplete}
+              onUploadError={handleUploadError}
+            />
+          </main>
+        </CardBody>
+        <CardFooter>
+          <p>No olvide subirlas con nombre adecuado</p>
+        </CardFooter>
+      </Card>
+    </Flex>
   );
 }
