@@ -1,0 +1,40 @@
+{
+  "name": "pruebatutos12",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3005",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@chakra-ui/next-js": "^2.1.4",
+    "@chakra-ui/react": "^2.7.1",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@types/formidable": "^2.0.6",
+    "@types/react-leaflet": "^3.0.0",
+    "@uploadthing/react": "^5.1.0",
+    "axios": "^1.4.0",
+    "clipboard": "^2.0.11",
+    "clipboardy": "^3.0.0",
+    "execa": "^7.1.1",
+    "formidable": "^3.4.0",
+    "framer-motion": "^10.12.17",
+    "next": "13.4.7",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-dropzone": "^14.2.3",
+    "uploadthing": "^5.1.0",
+    "use-clipboard-copy": "^0.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "20.3.2",
+    "@types/react": "18.2.14",
+    "@types/react-dom": "18.2.6",
+    "eslint": "8.43.0",
+    "eslint-config-next": "13.4.7",
+    "typescript": "5.1.3"
+  }
+}
