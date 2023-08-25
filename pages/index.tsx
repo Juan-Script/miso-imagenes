@@ -23,11 +23,7 @@ export default function Home() {
   const handleClientUploadComplete = (res: any) => {
     console.log("Files: ", res);
     const fileUrl = res[0].fileUrl;
-    copy(
-      '<img alt="" style="display: block; margin: auto; margin-top: 20px; margin-bottom: 20px;" src=" ' +
-        fileUrl +
-        '">'
-    );
+    copy(fileUrl);
     toast({
       title: "Imagen copiada con éxito.",
       description: "Pegue la imagen donde quieras utilizarla",
